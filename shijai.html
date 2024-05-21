@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汽车试驾|小米汽车</title>
+    <link rel="icon" href="./img/su7/6102dadda849c40004f9a13b.png" type="image/png">
+    <link rel="stylesheet" href="./css/reset.css"><!--重置样式-->
+    <link rel="stylesheet" href="./css/footer.css"><!--页脚样式-->
+    <link rel="stylesheet" href="./css/header.css"><!--页眉样式-->
+    <link rel="stylesheet" href="./css/subscribe-main.css"><!--主体样式-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4546089_jicdoxe1twt.css"><!--引入阿里巴巴图标库no color-->
+    <script src="./js/subseribe-main.js"></script><!--引入js-->
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+
+        </div>
+
+        <div class="subscribe-main">
+            <div class="table">
+                <div class="form-title">预约试驾</div>
+                <div class="form-group">
+                    <label class="form-label" for="car-model">试驾车型</label>
+                    <input type="text" id="car-model" class="form-input" value="XIAOMI SU7" readonly>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="location">试驾地点</label>
+                    <div class="flex">
+                        <input type="text" id="location" class="form-input" value="小米汽车江门市蓬江区五邑大学服务中心" readonly>
+                        <button class="form-button location-button"><i class="iconfont icon-dingwei"></i>获取定位</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">手机号</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="请输入手机号" maxlength="11" pattern="\d*">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="verification-code">验证码</label>
+                    <div class="flex">
+                        <input type="text" id="verification-code" class="form-input" placeholder="请输入验证码" maxlength="6"
+                            pattern="\d*">
+                        <button class="form-button" id="get-code-btn">获取验证码</button>
+                    </div>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="agreement">
+                    <label for="agreement">我已阅读并同意<a href="https://terms-car-h5.api.xiaomiev.com/user-retention/privacy"
+                            target="_blank">《预约试乘试驾隐私政策》</a>与<a
+                            href="https://terms-car-h5.api.xiaomiev.com/user-retention/agreement"
+                            target="_blank">《预约试乘试驾用户协议》</a></label>
+                </div>
+                <a href="./index.html" target="_blank"><button class="form-button1">一键预约</button></a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="contain">
+                <p>&copy; 2024 小米汽车科技有限公司版权所有</p>
+                <ul>
+                    <li><a href="#home">主页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+                <div class="contact">
+                    <div class="social-icons">
+                        <a href="https://www.weibo.com" target="_blank"><i class="iconfont icon-weixin"></i>官方微信</a>
+                        <a href="https://www.douyin.com" target="_blank"><i class="iconfont icon-douyin"></i>官方抖音</a>
+                        <a href="https://www.weibo.com" target="_blank"><i
+                                class="iconfont icon-xinlangweibo"></i>官方微博</a>
+                        <div class="tel"><a href="tel:400-888-8888"><i class="iconfont icon-dianhua"></i>400-888-8888</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+/* 重置全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置全局字体和居中 */
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 去除列表项标记 */
+li {
+    list-style: none;
+}
+
+/* 去除链接下划线 */
+a {
+    text-decoration: none;
+}
+
+/* 去除图片边框 */
+img {
+    border: none;
+}
+
+body {
+    overflow-x: hidden;
+    /* 防止水平滚动 */
+}
+
+html {
+    width: 100%;
+    /* 限制 HTML 元素的宽度为视口宽度 */
+}
+
+.container {
+    width: 100%;
+    /* 设置您想要的宽度 */
+    margin: 0 auto;
+    /* 将容器水平居中 */
+}
