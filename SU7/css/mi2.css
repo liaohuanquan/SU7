@@ -1,0 +1,194 @@
+/*===========================================================================*/
+/*main start*/
+.main {
+    position: relative; /* 让图片容器变成相对定位 */
+}
+.main img  {
+    max-width: 100%; /* 保证图片不超过父容器的宽度 */
+    height: auto; /* 让高度自动调整，以保持原始宽高比 */
+    transform: scale(1.35); /* 放大图像 */
+    padding-top: 100px;
+    transform-origin: center center; /* 设置变换原点为中心 */
+}
+.container {
+    position: relative; /* 让容器变成相对定位 */
+    width: 100%;
+    height: 100vh; /* 将整个页面高度设置为视口高度 */
+} 
+.xiaomi-title {
+    letter-spacing: 8px; /* 设置字符间距像素 */
+    position: absolute;
+    top: 1px; /* 调整文字与图片的垂直距离 */
+    left: 50%; /* 居中文字 */
+    transform: translateX(-50%); /* 水平居中 */
+    font-size: 48px;
+    font-weight: bold;
+    color: white; /* 设置文字颜色 */
+    font-weight: bold; /* 设置字体加粗 */
+    height: 110%;
+}
+.人车合一我心澎湃-title {
+    font-size: 18px; /* 设置字体大小为 14px */
+    font-weight: normal; /* 取消字体加粗效果 */
+    letter-spacing: 2px; /* 文字间距 */
+    margin-top: 40px; /* 设置与上方元素的距离为 20px */
+    position: relative; /* 使内部元素可以相对于该元素定位 */
+}
+.预约试驾-btn {
+    outline: none; /* 移除按钮的默认外边框 */
+    height: 40px; /* 设置按钮高度 */
+    border-radius: 8px; /* 设置按钮圆角 */
+    font-size: 16px; /* 设置文字大小 */
+    font-weight: normal; /* 设置字体粗细为普通 */
+    box-sizing: border-box; /* 设置盒模型为边框盒 */
+    transition: background-color 0.3s; /* 添加背景色过渡效果 */
+    background-color: transparent; /* 设置背景色为透明 */
+    border: 1.5px solid white; /* 设置边框样式 */
+    color: white; /* 设置文字颜色 */
+    width: 256px; /* 设置按钮宽度 */
+    top: 25px; /* 距离顶部 25px */
+    position: relative; /* 相对定位 */
+    padding: 8px 100px; /* 设置内边距 */
+    border: 2px solid white; /* 设置边框样式 */
+    color: white; /* 设置文字颜色 */
+    background-color: transparent; /* 设置背景为透明 */
+    text-decoration: none; /* 取消下划线 */
+    transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+}
+.预约试驾-btn:hover {
+    background-color: white; /* 鼠标悬停时背景填充为白色 */
+    color: black; /* 文字颜色变为黑色 */
+}
+.预约试驾-btn:hover::before {
+    content: ''; /* 必须有内容，否则伪元素不会显示 */
+    position: absolute; /* 绝对定位 */
+    top: -1.5px; /* 上移 1.5px */
+    left: -1.5px; /* 左移 1.5px */
+    width: calc(100% + 3px); /* 宽度增加 3px */
+    height: calc(100% + 3px); /* 高度增加 3px */
+    background-color: transparent; /* 初始状态为透明 */
+    border: 1.5px solid white; /* 设置边框样式 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+    z-index: -1; /* 将伪元素放置在按钮底部 */
+}
+.预约试驾-btn:hover::before {
+    content: ''; /* 必须有内容，否则伪元素不会显示 */
+    position: absolute; /* 绝对定位 */
+    top: -1.5px; /* 上移 1.5px */
+    left: -1.5px; /* 左移 1.5px */
+    width: calc(100% + 3px); /* 宽度增加 3px */
+    height: calc(100% + 3px); /* 高度增加 3px */
+    background-color: white; /* 设置背景颜色为白色 */
+    border-radius: 8px; /* 设置圆角 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+    z-index: -1; /* 将伪元素放置在按钮底部 */
+}
+.立即预定-btn {
+    outline: none; /* 移除按钮的默认外边框 */
+    height: 40px; /* 设置按钮高度 */
+    border-radius: 8px; /* 设置按钮圆角 */
+    font-size: 16px; /* 设置文字大小 */
+    font-weight: normal; /* 设置字体粗细为普通 */
+    box-sizing: border-box; /* 设置盒模型为边框盒 */
+    transition: background-color 0.3s; /* 添加背景色过渡效果 */
+    background-color: transparent; /* 设置背景色为透明 */
+    border: 1.5px solid white; /* 设置边框样式 */
+    color: white; /* 设置文字颜色 */
+    width: 256px; /* 设置按钮宽度 */
+    top: 25px; /* 距离顶部 25px */
+    position: relative; /* 相对定位 */
+    padding: 8px 100px; /* 设置内边距 */
+    border: 2px solid white; /* 设置边框样式 */
+    color: white; /* 设置文字颜色 */
+    background-color: transparent; /* 设置背景为透明 */
+    text-decoration: none; /* 取消下划线 */
+    transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+}
+.立即预定-btn:hover {
+    background-color: white; /* 鼠标悬停时背景填充为白色 */
+    color: black; /* 文字颜色变为黑色 */
+}
+.立即预定-btn:hover::before {
+    content: ''; /* 必须有内容，否则伪元素不会显示 */
+    position: absolute; /* 绝对定位 */
+    top: -1.5px; /* 上移 1.5px */
+    left: -1.5px; /* 左移 1.5px */
+    width: calc(100% + 3px); /* 宽度增加 3px */
+    height: calc(100% + 3px); /* 高度增加 3px */
+    background-color: transparent; /* 初始状态为透明 */
+    border: 1.5px solid white; /* 设置边框样式 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+    z-index: -1; /* 将伪元素放置在按钮底部 */
+}
+.立即预定-btn:hover::before {
+    content: ''; /* 必须有内容，否则伪元素不会显示 */
+    position: absolute; /* 绝对定位 */
+    top: -1.5px; /* 上移 1.5px */
+    left: -1.5px; /* 左移 1.5px */
+    width: calc(100% + 3px); /* 宽度增加 3px */
+    height: calc(100% + 3px); /* 高度增加 3px */
+    background-color: white; /* 设置背景颜色为白色 */
+    border-radius: 8px; /* 设置圆角 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+    z-index: -1; /* 将伪元素放置在按钮底部 */
+}
+.main2 {
+    position: relative; /* 设置父容器为相对定位，使得绝对定位的标题文字相对于此定位 */
+    padding-top: 10%;
+}
+.main2 img  {
+    width: 100%;
+    height: auto; /* 让高度自动调整，以保持原始宽高比 */
+    transform: scale(1.2); /* 放大图像，此处的1.2表示放大倍数，您可以根据需要调整 */
+    z-index: -1;
+}
+.xiaomisu7创始版 {
+    position: absolute; /* 将标题文字定位为绝对定位，相对于父容器定位 */
+    top: 10%; /* 位于父容器顶部 */
+    left: 50%; /* 位于父容器水平居中 */
+    transform: translateX(-50%); /* 使用负的50%的偏移量使标题水平居中 */
+    padding-top: 80px; /* 设置标题内边距 */
+    z-index: 1; /* 提高标题文字的堆叠顺序，确保位于图片上方 */
+}
+.main2 img {
+    width: 100%; /* 保证图片不超过父容器的宽度 */
+    height: auto; /* 让高度自动调整，以保持原始宽高比 */
+    transform: scale(1.2); /* 放大图像，此处的1.2表示放大倍数，您可以根据需要调整 */
+}
+.了解创始版车型-btn {
+    letter-spacing: 2px; /* 文字间距 */
+    position: absolute; /* 将标题文字定位为绝对定位，相对于父容器定位 */
+    top: 97%; /* 位于父容器位置 */
+    left: 50%; /* 位于父容器水平居中 */
+    transform: translateX(-50%); /* 使用负的50%的偏移量使标题水平居中 */
+    padding-top: 80px; /* 设置标题内边距 */
+    z-index: 999; /* 提高标题文字的堆叠顺序，确保位于图片上方 */
+    outline: none; /* 移除按钮的默认外边框 */
+    height: 40px; /* 设置按钮高度 */
+    border-radius: 8px; /* 设置按钮圆角 */
+    font-size: 16px; /* 设置文字大小 */
+    font-weight: normal; /* 设置字体粗细为普通 */
+    box-sizing: border-box; /* 设置盒模型为边框盒 */
+    transition: background-color 0.3s, color 0.3s; /* 添加背景色和文字颜色过渡效果 */
+    background-color: transparent; /* 设置背景色为透明 */
+    border: 2px solid white; /* 设置边框样式 */
+    color: white; /* 设置文字颜色 */
+    padding: 8px 170px; /* 设置内边距 */
+    text-decoration: none; /* 取消下划线 */
+}
+.了解创始版车型-btn:hover {
+    background-color: white; /* 鼠标悬停时背景填充为白色 */
+    color: black; /* 文字颜色变为黑色 */
+}
+.了解创始版车型-btn:hover::before {
+    content: ''; /* 必须有内容，否则伪元素不会显示 */
+    position: absolute; /* 绝对定位 */
+    top: -1.5px; /* 上移 1.5px */
+    left: -1.5px; /* 左移 1.5px */
+    width: calc(100% + 3px); /* 宽度增加 3px */
+    height: calc(100% + 3px); /* 高度增加 3px */
+    background-color: transparent; /* 初始状态为透明 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+    z-index: -1; /* 将伪元素放置在按钮底部 */
+    border-radius: 8px; /* 设置圆角 */
+}
