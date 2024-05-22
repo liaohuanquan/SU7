@@ -1,9 +1,11 @@
 /*===========================================================================*/
 /*导航start*/
-.top-nav-left li:first-child {
-    margin-right: 10px; /* 调整Logo和其他导航项之间的间距 */
+.logo {
+    margin-right: 17.5%; /* 调整Logo和其他导航项之间的间距 */
 }
-
+.logo:hover {
+    text-decoration: none;
+}
 .top-nav-left li:first-child img {
     max-width: 35px; /* 调整Logo的大小 */
     height: auto;
@@ -11,40 +13,43 @@
 }
 
 .top-nav {
-    width: 100%;
-    height: 50px;
+    width: 100vw;
+    height: 57px;
     line-height: 60px;
-    background-color: rgba(44, 55, 61, 0.95); /* 使用 rgba() 函数设置背景颜色及透明度 */
+    background-color: rgba(0, 0, 0, 0.734); /* 使用 rgba() 函数设置背景颜色及透明度 */
     font-size: 14px;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999; /* 导航栏位于其他元素之上 */
+    z-index: 1000; /* 导航栏位于其他元素之上 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* 水平偏移量 | 垂直偏移量 | 模糊半径 | 阴影颜色 */
+    backdrop-filter: blur(80px); /* 添加高斯模糊效果 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
 }
 
-.top-nav .warp {
-    width: 100%;
-    margin: 0 auto;
-}
 
-.top-nav .top-nav-left {
-    float: left;
-}
-
-.top-nav .top-nav-right {
+.top-nav-right {
     float: right;
-    margin-right: 40px;
+    margin-right: 20px;
 }
-
-.top-nav li {
+.top-nav-right li {
+    padding: 0;
+    position: relative;
+    float: left;
+    padding-right: 20px;
+    }
+.top-nav-left li {
     float: left;
     padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 18px;
     position: relative;
 }
 
 .top-nav a {
-    color: #c2bfbf;
+    color: #e6e6e6;
+
+
 }
 
 /* 定义下划线动画效果 */
@@ -63,31 +68,18 @@
     display: block;
     width: 0;
     height: 1px; /* 下划线的高度 */
-    background-color: transparent; /* 下划线的颜色 */
-    transition: width 0.3s ease; /* 过渡动画效果 */
-    margin-top: -18px; /* 负边距将下划线向上移动，使其贴近文字 */
-}
-
-/* 应用动画效果 */
-.top-nav li a:hover::after {
-    animation: underlineGrow 0.3s ease forwards;
     background-color: #ffffff; /* 下划线的颜色 */
+    transition: width 0.3s ease; /* 过渡动画效果 */
+    margin-top: -10px; /* 负边距将下划线向上移动，使其贴近文字 */
 }
 
-/* 修改鼠标悬停时文字颜色和加粗 */
+.top-nav li a:hover::after {
+    background-color: #ffffff; /* 下划线的颜色 */
+    width: 100%;
+}
+
 .top-nav li a:hover {
     color: #ffffff; /* 设置文字颜色为纯白色 */
-}
-
-/* 设置默认状态为透明 */
-.top-nav {
-    opacity: 0.75;
-    transition: opacity 0.3s ease; /* 添加过渡效果 */
-}
-
-/* 鼠标悬停时变为不透明 */
-.top-nav:hover {
-    opacity: 1;
 }
 
 .download {
@@ -127,7 +119,7 @@
     border-right: 8px solid transparent;
     position: absolute;
     bottom: 0;
-    left: 53px;
+    left: 55px;
     top: 52px;
     margin-left: 4px;
     display: none;
@@ -138,17 +130,77 @@
 }
 
 .sub-menu {
-    display: none; /* 初始状态隐藏 */
-    position: absolute;
-    background-color: rgba(44, 55, 61, 0.95); /* 使用与父菜单相同的背景颜色 */
+    display: flex; /* 初始状态隐藏 */
+    position: fixed; /* 改为 fixed 以确保子菜单宽度全屏 */
+    background-color: rgba(0, 0, 0, 0.487); /* 使用与父菜单相同的背景颜色 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* 阴影效果 */
-    z-index: 1000; /* 使其位于其他元素之上 */
-    top: 50px; /* 调整子菜单的垂直位置 */
-    left: 0; /* 将子菜单定位在父菜单的左侧 */
-    width: 100%; /* 子菜单的宽度与父菜单相同 */
+    z-index: 998; /* 使其位于其他元素之上 */
+    top: 57px; /* 调整子菜单的垂直位置 */
+    width: 100vw; /* 子菜单宽度占满父元素 */
+    max-height: 0; /* 初始高度为0 */
+    overflow: hidden; /* 隐藏超出部分 */
+    transition: max-height 0.3s ease, visibility 0.3s ease; /* 过渡动画效果 */
+    backdrop-filter: blur(80px); /* 添加高斯模糊效果 */
+    visibility: hidden; /* 初始状态不可见 */
+    left:0;
+    justify-content: center; /* 子菜单项水平居中 */
+    align-items: center; /* 子菜单项垂直居中 */
+    backdrop-filter: blur(80px); /* 添加高斯模糊效果 */
 }
 
-.小米su7:hover .sub-menu {
+.服务介绍:hover .sub-menu,.核心技术:hover .sub-menu,.小米su7:hover .sub-menu {
     display: block; /* 鼠标悬停时显示 */
+    max-height: 60px; /* 设置最大高度，根据实际需要调整 */
+    display: flex; /* 设置display为flex，确保子菜单显示 */
+    visibility: visible; /* 使子菜单可见 */
+}
+.sub-menu li{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.search-box{
+    margin: 0;
+    padding: 0;
+}
+.search-btn{
+    outline: none; /* 移除按钮的默认外边框 */    
+    border-radius: 8px; /* 设置按钮圆角 */
+    font-weight: normal; /* 设置字体粗细为普通 */    
+    box-sizing: border-box; /* 设置盒模型为边框盒 */
+    transition: background-color 0.3s, color 0.3s; /* 添加背景色和文字颜色过渡效果 */
+    background-color: transparent; /* 设置背景色为透明 */
+    border: 1px solid white; /* 设置边框样式 */
+    color: #e6e6e6; /* 设置文字颜色 */
+    padding: 7px 24px; /* 设置内边距 */
+    text-decoration: none; /* 取消下划线 */
+    font-size: 14px; /* 设置文字大小 */
+}
+.search-btn:hover {
+    background-color: #e6e6e6; /* 鼠标悬停时背景填充为白色 */
+    color: black; /* 文字颜色变为黑色 */
+    cursor: pointer; /* 设置鼠标悬停时光标为手形 */
+}
+.search-btn2{
+    outline: none; /* 移除按钮的默认外边框 */    
+    border-radius: 8px; /* 设置按钮圆角 */
+    font-weight: normal; /* 设置字体粗细为普通 */    
+    box-sizing: border-box; /* 设置盒模型为边框盒 */
+    transition: background-color 0.3s, color 0.3s; /* 添加背景色和文字颜色过渡效果 */
+    background-color: #e6e6e6; /* 设置背景色为透明 */
+    border: 1px solid #e6e6e6; /* 设置边框样式 */
+    color: black; /* 设置文字颜色 */
+    padding: 7px 24px; /* 设置内边距 */
+    text-decoration: none; /* 取消下划线 */
+    font-size: 14px; /* 设置文字大小 */
+}
+.search-btn2:hover {
+    background-color: white; /* 鼠标悬停时背景填充为白色 */
+    color: black; /* 文字颜色变为黑色 */
+    cursor: pointer; /* 设置鼠标悬停时光标为手形 */
+}
+.transparent {/*监听器类*/
+    background-color: transparent; /* 透明背景颜色 */
+    box-shadow: none; /* 取消阴影 */
+    transition: background-color 0.3s, color 0.3s; /* 添加背景色和文字颜色过渡效果 */
 }
 /*导航end*/

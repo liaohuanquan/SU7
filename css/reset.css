@@ -31,7 +31,7 @@ body {
 }
 
 html {
-    width: 100%;
+    width: 100vw;
     /* 限制 HTML 元素的宽度为视口宽度 */
 }
 

@@ -55,7 +55,7 @@
     box-sizing: border-box; /* 设置盒模型为边框盒 */
     transition: background-color 0.3s, color 0.3s; /* 添加背景色和文字颜色过渡效果 */
     background-color: transparent; /* 设置背景色为透明 */
-    border: 2px solid white; /* 设置边框样式 */
+    border: 1px solid white; /* 设置边框样式 */
     color: white; /* 设置文字颜色 */
     width: 256px; /* 设置按钮宽度 */
     padding: 8px 20px; /* 设置内边距 */

@@ -1,15 +1,6 @@
 /*===========================================================================*/
 /*main start*/
-.main {
-    position: relative; /* 让图片容器变成相对定位 */
-}
-.main img  {
-    max-width: 100%; /* 保证图片不超过父容器的宽度 */
-    height: auto; /* 让高度自动调整，以保持原始宽高比 */
-    transform: scale(1.35); /* 放大图像 */
-    padding-top: 100px;
-    transform-origin: center center; /* 设置变换原点为中心 */
-}
+
 .container {
     position: relative; /* 让容器变成相对定位 */
     width: 100%;
@@ -49,7 +40,7 @@
     top: 25px; /* 距离顶部 25px */
     position: relative; /* 相对定位 */
     padding: 8px 100px; /* 设置内边距 */
-    border: 2px solid white; /* 设置边框样式 */
+    border: 1px solid white; /* 设置边框样式 */
     color: white; /* 设置文字颜色 */
     background-color: transparent; /* 设置背景为透明 */
     text-decoration: none; /* 取消下划线 */
@@ -98,7 +89,7 @@
     top: 25px; /* 距离顶部 25px */
     position: relative; /* 相对定位 */
     padding: 8px 100px; /* 设置内边距 */
-    border: 2px solid white; /* 设置边框样式 */
+    border: 1px solid white; /* 设置边框样式 */
     color: white; /* 设置文字颜色 */
     background-color: transparent; /* 设置背景为透明 */
     text-decoration: none; /* 取消下划线 */
@@ -131,6 +122,16 @@
     border-radius: 8px; /* 设置圆角 */
     transition: background-color 0.3s; /* 添加过渡效果 */
     z-index: -1; /* 将伪元素放置在按钮底部 */
+}
+.main {
+    position: relative; /* 让图片容器变成相对定位 */
+}
+.main img  {
+    max-width: 100%; /* 保证图片不超过父容器的宽度 */
+    height: auto; /* 让高度自动调整，以保持原始宽高比 */
+    transform: scale(1.35); /* 放大图像 */
+    padding-top: 100px;
+    transform-origin: center center; /* 设置变换原点为中心 */
 }
 .main2 {
     position: relative; /* 设置父容器为相对定位，使得绝对定位的标题文字相对于此定位 */
@@ -171,7 +172,7 @@
     box-sizing: border-box; /* 设置盒模型为边框盒 */
     transition: background-color 0.3s, color 0.3s; /* 添加背景色和文字颜色过渡效果 */
     background-color: transparent; /* 设置背景色为透明 */
-    border: 2px solid white; /* 设置边框样式 */
+    border: 1px solid white; /* 设置边框样式 */
     color: white; /* 设置文字颜色 */
     padding: 8px 170px; /* 设置内边距 */
     text-decoration: none; /* 取消下划线 */

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汽车试驾 | 小米汽车</title>
+
+    <link rel="icon" href="./img/su7/6102dadda849c40004f9a13b.png" type="image/png">
+    <link rel="stylesheet" href="./css/reset.css"><!--重置样式-->
+    <link rel="stylesheet" href="./css/mi.css"><!--页眉样式-->
+    <link rel="stylesheet" href="./css/subscribe-main.css"><!--主体样式-->
+    <link rel="stylesheet" href="./css/footer.css"><!--页脚样式-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4546089_jicdoxe1twt.css"><!--引入阿里巴巴图标库no color-->
+    <script src="./js/subseribe-main.js"></script><!--引入js-->
+</head>
+
+<body>
+    <div class="container">
+        <!--导航栏start mi.css-->
+        <div class="top-nav">
+            <ul class="top-nav-left">
+                <li class="logo"><a href="https://www.xiaomi.com"><img src="./img/su7/6102dadda849c40004f9a13b.png"
+                            alt="Xiaomi"></a><span></span></li>
+                <li><a href="./index.html">首页</a><span></span></li>
+                <li class="小米su7"><a href="#">小米SU7</a><span></span>
+                    <ul class="sub-menu ">
+                        <li><a href="#">小米SU7</a></li>
+                        <li><a href="#">小米SU7创始版</a></li>
+                        <li><a href="#">车型对比</a></li>
+                    </ul>
+                </li>
+                <li class="核心技术"><a href="#">核心技术</a><span></span>
+                    <ul class="sub-menu ">
+                        <li><a href="#">超级电机</a></li>
+                        <li><a href="#">高压平台</a></li>
+                        <li><a href="#">超级大压铸</a></li>
+                        <li><a href="#">智能驾驶</a></li>
+                        <li><a href="#">智能座舱</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">小米汽车工厂</a><span></span></li>
+                <li><a href="#">门店咨询</a><span></span></li>
+                <li class="服务介绍"><a href="#">服务介绍</a><span></span>
+                    <ul class="sub-menu ">
+                        <li><a href="#">服务保障</a></li>
+                        <li><a href="#">充电补能</a></li>
+                        <li><a href="#">金融试算</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">在APP查看</a><span></span>
+                    <div class="download">
+                        <img src="./img/su7/app_scan.png" alt="小米汽车app二维码">
+                        <p>小米汽车APP</p>
+                    </div>
+                    <div class="strl"></div><!--二维码上方三角形-->
+                </li>
+            </ul>
+            <ul class="top-nav-right">
+                <li class="search-box"><button class="search-btn" onclick="location.href='./trycar.html'">预约试驾</button>
+                </li>
+                <li class="search-box"><button class="search-btn2" onclick="location.href='./login.html'">登入账号</button>
+                </li>
+            </ul>
+        </div>
+        <!--导航栏end-->
+
+        <!-- start subscribe-main.css-->
+        <div class="subscribe-main">
+            <div class="table">
+                <div class="form-title">预约试驾</div>
+                <div class="form-group">
+                    <label class="form-label" for="car-model">试驾车型</label>
+                    <input type="text" id="car-model" class="form-input" value="XIAOMI SU7" readonly>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="location">试驾地点</label>
+                    <div class="flex">
+                        <input type="text" id="location" class="form-input" value="小米汽车江门市蓬江区五邑大学服务中心" readonly>
+                        <button class="form-button location-button"><i class="iconfont icon-dingwei"></i>获取定位</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">手机号</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="请输入手机号" maxlength="11" pattern="\d*">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="verification-code">验证码</label>
+                    <div class="flex">
+                        <input type="text" id="verification-code" class="form-input" placeholder="请输入验证码" maxlength="6"
+                            pattern="\d*">
+                        <button class="form-button" id="get-code-btn">获取验证码</button>
+                    </div>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="agreement">
+                    <label for="agreement">我已阅读并同意<a href="https://terms-car-h5.api.xiaomiev.com/user-retention/privacy"
+                            target="_blank">《预约试乘试驾隐私政策》</a>与<a
+                            href="https://terms-car-h5.api.xiaomiev.com/user-retention/agreement"
+                            target="_blank">《预约试乘试驾用户协议》</a></label>
+                </div>
+                <a href="./index.html"><button class="form-button1">一键预约</button></a>
+            </div>
+        </div>
+        <!-- end subscribe-main.css-->
+
+        <!--start footer.css-->
+        <footer class="footer">
+            <div class="contain">
+                <h4></h4>
+                <p>&copy; 2024 小米汽车科技有限公司版权所有</p>
+                <ul>
+                    <li><a href="#home">主页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+                <div class="contact">
+                    <div class="social-icons">
+                        <a href="https://www.weibo.com" target="_blank"><i class="iconfont icon-weixin"></i>官方微信</a>
+                        <a href="https://www.douyin.com" target="_blank"><i class="iconfont icon-douyin"></i>官方抖音</a>
+                        <a href="https://www.weibo.com" target="_blank"><i
+                                class="iconfont icon-xinlangweibo"></i>官方微博</a>
+                        <div class="tel"><a href="tel:400-888-8888"><i
+                                    class="iconfont icon-dianhua"></i>400-888-8888</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--end footer.css-->
+    </div>
+</body>
+
+</html>
