@@ -1,0 +1,248 @@
+.pengpai1-img{
+    background-image: url("../img/澎湃座舱/su7_26_1.png");
+    background-size: auto; /* 背景图片保持原始大小 */
+    background-position: center; /* 背景图片居中 */
+    height:1558px;
+    width: 100%;
+}
+.section6-title{
+    padding-top: 200px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 100;
+}
+.pengpaititle1{
+    font-weight: 100;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+h2{
+    font-weight: 100;
+    padding-bottom: 30px;
+    font-size: 30px;
+
+}
+h1{
+    font-weight: 100;
+    padding-bottom: 30px;
+    font-size: 40px;
+
+}
+.pengpai2 {
+    background-color: black;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.pengpai2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* 调整图片和文本之间的间距 */
+}
+
+.pengpai2-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.text-below {
+    margin-top: 120px; /* 调整图片和文本之间的间距 */
+}
+
+.ios {
+    padding-top: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 100;
+    padding-bottom: 70px;
+}
+
+.pengpai2-item img {
+    width: 70%; /* 调整图片宽度 */
+}
+
+.text-below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; /* 调整文本和底部边缘之间的间距 */
+    color: #fff;
+    padding-top: 50px;
+    font-size: 28px;
+    font-weight: 100;
+    padding-bottom: 70px;
+}
+
+.pengpai3{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+
+}
+.pengpai3-title{
+    font-size: 28px;
+    font-weight: 100;
+    padding-bottom: 50px;
+}
+.pengpai3 img{
+    width: 70%;
+}
+#banner1 {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    height: 300px;
+    padding-top: 80px;
+    cursor: pointer;
+    padding-bottom: 100px;
+}
+
+#banner1 li {
+    float: left;
+    position: absolute;
+    left: 0px;
+    transition-duration: 0.4s;
+}
+
+#banner1 .cur_img {
+    width: 600px;
+    height: auto;
+    border-radius: 6px;
+}
+
+#banner1 .img_Public {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+#banner1 .left {
+    left: 0;
+}
+
+#banner1 .right {
+    right: 0;
+}
+.pengpai4{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    padding: 50px 15%;
+}
+.pengpai4-title{
+    display: flex;
+    margin-bottom: 20px;
+}
+.pengpai4-title1, .pengpai4-title2 {
+    flex: 1;
+}
+.pengpai4-title1{
+
+    font-size: 32px;
+    font-weight: 100;
+}
+.pengpai4-title2{
+    font-size: 14px;
+    font-weight: 100;
+    text-align: left;
+    line-height: 1.6;
+    float: right;
+    padding-left: 10%;
+    color: rgb(187, 187, 187);
+}
+.pengpai4-content {
+    display: flex;
+    justify-content: space-between;
+}
+.pengpai4-img img {
+    width: 80%;
+    height: auto;
+}
+.pengpai5{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+}
+.pengpai5-title2{
+    color: rgb(187, 187, 187);
+    padding-bottom: 20px;
+}
+.pengpai5-video video {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+.pengpai5-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner2 {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    height: 300px;
+    padding-top: 80px;
+    cursor: pointer;
+    padding-bottom: 100px;
+}
+
+#banner2 li {
+    float: left;
+    position: absolute;
+    left: 0px;
+    transition-duration: 0.4s;
+}
+
+#banner2 .cur_img {
+    width: 600px;
+    height: auto;
+    border-radius: 6px;
+}
+
+#banner2 .img_Public {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+#banner2 .left {
+    left: 0;
+}
+
+#banner2 .right {
+    right: 0;
+}
+.pengpai6{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    padding: 50px 0;
+}
+.pengpai6-title{
+
+    font-size: 28px;
+    font-weight: 100;
+    padding-bottom: 30px;
+}

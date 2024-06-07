@@ -1,0 +1,46 @@
+
+.lunbo{
+        background-color: rgb(233, 232, 232);
+}
+#banner {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    height: 300px;
+    padding-top: 80px;
+    cursor: pointer;
+    padding-bottom: 200px;
+}
+
+#banner li {
+    float: left;
+    position: absolute;
+    left: 0px;
+    transition-duration: 0.4s;
+}
+
+#banner .cur_img {
+    width: 600px;
+    height: auto;
+    border-radius: 6px;
+}
+
+#banner .img_Public {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+#banner .left {
+    left: 0;
+}
+
+#banner .right {
+    right: 0;
+}

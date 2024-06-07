@@ -23,29 +23,4 @@
     padding-left: 50px;
     orphans: 0.9;
 }
-.轮播容器 {
-    position: relative;
-    width: 100%;
-    height: auto; /* 根据图片高度自动调整 */
-    overflow: hidden;
-    background-color: #e9e8e8;
-    padding: 30px;
-}
-.轮播列表 {
-    display: flex;
-    transition: transform 0.3s ease; /* 使用过渡动画 */
-}
-.轮播项 {
-    flex-shrink: 0;
-    width: 100%;
-    position: relative;
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
-}
-.轮播项 img {
-    width: 70%; /* 将图片宽度设置为原来的一半 */
-    height: auto; /* 让高度按比例自动调整 */
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* 保持图片比例并适应容器 */
-}
+

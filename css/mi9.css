@@ -1,0 +1,93 @@
+.fade1 {
+    padding: 50px;
+  }
+  .form-container {
+    height: auto;
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: left;
+    backdrop-filter: blur(80px);
+    z-index: 100;
+  }
+  .logo1 {
+    width: 31px; /* 将图像宽度设置为40px */
+    height: auto; /* 保持图像比例 */
+    padding-right: 15px;
+  }
+  .form-row {
+    margin-bottom: 10px;
+  }
+  .form-column {
+    display: inline-block;
+    width: 47.5%;
+    margin-right: 3%;
+  }
+  .form-column:last-child {
+    margin-right: 0;
+  }
+  label {
+    display: block;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #8e8e8e;
+    background-color: rgb(246, 246, 246);
+  }
+  button {
+    border: none;
+    background-color: #ff6600d5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    background-color: #ff6700;
+  }
+  .custom-textarea {
+    height: 100px;
+    resize: vertical;
+    width: 98%;
+  }
+  .fade2 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .success-modal {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 180px;
+  }
+  .success-text{
+    padding-bottom: 100px;
+    font-size: 20px;
+  }
+  .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

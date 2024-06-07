@@ -1,44 +1,127 @@
+.section4 {
+    background-color: #f8f8f8;
+    padding: 60px 80px;
+}
 
-.亮点设计，点睛之笔{
-    color: #12151A; /* 文字颜色 */
-    font-size: 32px; /* 字体大小 */
-    font-weight: 300; /* 字体粗细 */
-    text-align: left; /* 文字左对齐 */
-    padding-left: 240px; /* 左侧内边距 */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    text-align: left;
+}
+
+.intro-section p {
+    margin: 0;
+}
+
+.intro-text {
+    font-size: 48px;
+    color: #333;
+    font-weight: 300;
+    margin-left: 100px;
+}
+
+.intro-description {
+    max-width: 468px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    color: #999;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 57px;
+    margin-top: 80px;
+}
+
+.card {
+    background-color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    margin-top: 24px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-info {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-note {
+    margin-top: 80px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 760px) {
+    .container {
+        padding: 40px 24px;
     }
-    .灯{
-    justify-content: center; /* 水平方向上居中对齐 */
-    align-items: center; /* 垂直方向上居中对齐 */
-    padding: 0 20px; /* 左右内边距为 20 像素 */
-    animation: fadeInUpFast 0.3s ease-in; /* 应用渐显动画 */
-    text-align: center; /* 文字居中对齐 */
-    line-height: 1.4; /* 行高 */
-    background-color: #ffffff;
-    padding-top: 20px;
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
     }
-    .细节设计{
-    padding-top: 30px;
-    text-align: left; /* 文字左对齐 */
-    padding-left: 240px; /* 左侧内边距 */
-    color: #635d5d; /* 文字颜色 */
-    font-weight: 300; /* 字体粗细 */
+
+    .intro-text {
+        font-size: 24px;
     }
-    .灯图 {
-    display: flex; /* 使用 Flexbox 布局 */
-    content: ''; /* 必须有内容，否则伪元素不会显示 */
-    position: absolute; /* 绝对定位 */
-    padding-top: 20px; /* 上边距 */
+
+    .intro-description {
+        margin-top: 16px;
     }
-    .su7_5_1_left {
-    transform: scale(0.4); /* 图片缩放为原来的一半大小 */
-    transform-origin: top right; /* 设置变形的原点 */
-    object-fit: contain; /* 保持图片比例并适应容器 */
+
+    .cards-section {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 40px;
     }
-    .su7_5_1_right {
-    transform: scale(0.4); /* 图片缩放为原来的0.6倍大小 */
-    transform-origin: top left; /* 设置变形的原点为左上角 */
-    object-fit: contain; /* 保持图片比例并适应容器 */
-    padding-left: 30px; /* 左侧内边距 */
-    }    
-    
-    
+
+    .card {
+        padding: 24px 16px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-info {
+        font-size: 12px;
+    }
+
+    .footer-note {
+        margin-top: 40px;
+        text-align: left;
+    }
+}
+
+

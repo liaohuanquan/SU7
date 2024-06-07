@@ -1,0 +1,76 @@
+.carbox{
+    position:relative;
+    padding: 330px 0;
+    width: 100%;
+    height: auto;
+}
+.box{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+.box-img{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:all 1.5s;
+}
+.caption {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    font-weight: 100;
+    padding: 10px;
+}
+.caption1 {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+}
+.caption1_1{
+    font-size: 26px;
+}
+.box-img img{
+    width:100%;
+    height:auto;
+}
+.box-img:nth-child(1){
+    opacity:1;
+}
+
+.box-zhiding>ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.box-zhiding li{
+    width:14px;
+    height:14px;
+    border-radius:100%;
+    background-color:#ccc;
+    float:left;
+    margin-right:10px;
+    
+}
+.box-zhiding li:hover{
+    background-color:#fff;
+}
+.box-zhiding li:nth-child(1){
+    background-color:#fff;
+}
+.box-zhiding{
+    position:absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+}

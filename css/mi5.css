@@ -1,0 +1,18 @@
+.fuzhujiashi{
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 100;   
+}
+.fuzhujiashi2{
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 100;   
+}
+.fuzhujiashi-img img{
+    width: 65%;
+    height: auto;
+}

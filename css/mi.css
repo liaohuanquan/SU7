@@ -1,7 +1,7 @@
 /*===========================================================================*/
 /*导航start*/
 .logo {
-    margin-right: 17.5%; /* 调整Logo和其他导航项之间的间距 */
+    margin-right: 6%; /* 调整Logo和其他导航项之间的间距 */
 }
 .logo:hover {
     text-decoration: none;
@@ -9,7 +9,7 @@
 .top-nav-left li:first-child img {
     max-width: 35px; /* 调整Logo的大小 */
     height: auto;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .top-nav {
@@ -68,24 +68,24 @@
     display: block;
     width: 0;
     height: 1px; /* 下划线的高度 */
-    background-color: #ffffff; /* 下划线的颜色 */
+    background-color: #e6e6e6; /* 下划线的颜色 */
     transition: width 0.3s ease; /* 过渡动画效果 */
     margin-top: -10px; /* 负边距将下划线向上移动，使其贴近文字 */
 }
 
 .top-nav li a:hover::after {
-    background-color: #ffffff; /* 下划线的颜色 */
+    background-color: #e6e6e6; /* 下划线的颜色 */
     width: 100%;
 }
 
 .top-nav li a:hover {
-    color: #ffffff; /* 设置文字颜色为纯白色 */
+    color: #e6e6e6; /* 设置文字颜色为纯白色 */
 }
 
 .download {
     width: 124px;
     height: 148px;
-    background-color: #ffffff;
+    background-color: #e6e6e6;
     box-shadow: 0 1px 5px #aaa;
     position: absolute;
     top: 60px;
@@ -114,7 +114,7 @@
 .strl {
     width: 0;
     height: 0;
-    border-bottom: 8px solid #ffffff;
+    border-bottom: 8px solid #e6e6e6;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     position: absolute;
@@ -169,7 +169,7 @@
     box-sizing: border-box; /* 设置盒模型为边框盒 */
     transition: background-color 0.3s, color 0.3s; /* 添加背景色和文字颜色过渡效果 */
     background-color: transparent; /* 设置背景色为透明 */
-    border: 1px solid white; /* 设置边框样式 */
+    border: 1px solid #e6e6e6; /* 设置边框样式 */
     color: #e6e6e6; /* 设置文字颜色 */
     padding: 7px 24px; /* 设置内边距 */
     text-decoration: none; /* 取消下划线 */
@@ -203,4 +203,52 @@
     box-shadow: none; /* 取消阴影 */
     transition: background-color 0.3s, color 0.3s; /* 添加背景色和文字颜色过渡效果 */
 }
+/* 添加 white-bg 类的样式 */
+.top-nav.white-bg {
+    background-color: white; /* 滑动到一定位置后导航栏背景颜色变为白色 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 调整阴影效果 */
+}
+
+/* white-bg 类中导航链接的样式 */
+.top-nav.white-bg a {
+    color: black; /* 设置文字颜色为黑色 */
+}
+
+/* white-bg 类中按钮的样式 */
+.top-nav.white-bg .search-btn,
+.top-nav.white-bg .search-btn2 {
+    border-color: black; /* 设置边框颜色为黑色 */
+    color: black; /* 设置按钮文字颜色为黑色 */
+}
+
+/* white-bg 类中按钮悬停时的样式 */
+.top-nav.white-bg .search-btn2 {
+    background-color: black; /* 设置“登入账号”按钮背景为黑色 */
+    color: white; /* 设置“登入账号”按钮文字为白色 */
+}
+
+/* white-bg 类中按钮悬停时的样式 */
+.top-nav.white-bg .search-btn:hover,
+.top-nav.white-bg .search-btn2:hover {
+    background-color: black; /* 鼠标悬停时背景填充为黑色 */
+    color: white; /* 文字颜色变为白色 */
+}
+
+/* white-bg 类中子菜单的样式 */
+.top-nav.white-bg .sub-menu {
+    background-color: rgba(255, 255, 255, 0.9); /* 设置子菜单背景颜色 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+}
+
+/* white-bg 类中导航链接悬停时的样式 */
+.top-nav.white-bg a:hover {
+    background-color: transparent; /* 确保悬停时背景颜色保持透明 */
+    color: black; /* 鼠标悬停时文字颜色变为黑色 */
+}
+
+/* white-bg 类中导航链接悬停时下划线的样式 */
+.top-nav.white-bg li a:hover::after {
+    background-color: black; /* 鼠标悬停时下划线颜色变为黑色 */
+}
+
 /*导航end*/
